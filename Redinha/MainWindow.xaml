@@ -1,0 +1,69 @@
+﻿<Window x:Class="Redinha.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Redinha"
+        mc:Ignorable="d"
+        Title="Redinha" Height="450" Width="800">
+    <Grid>
+        <Button Content="Montar Agenda" HorizontalAlignment="Left" Height="147" Margin="76,221,0,0" VerticalAlignment="Top" Width="196" Cursor="Wait" IsEnabled="False" BorderBrush="#FFDA0B0B" Background="#FF5D3F3F"/>
+        <DockPanel HorizontalAlignment="Stretch" Height="100" LastChildFill="False" Margin="0" VerticalAlignment="Top" Width="auto">
+            <Menu x:Name="Menu_Principal" VerticalAlignment="Top">
+                <MenuItem Header="_Arquivo">
+                    <MenuItem Header="Logout" Click="LogOut_Click"/>
+                    <MenuItem Header="_Sair" Click="Sair_Click"/>
+                    <MenuItem Header="Configurar Usuario"/>
+                    <Separator/>
+                    <MenuItem Header="_Sobre" Click="Info_click"/>
+                </MenuItem>
+                <MenuItem Cursor="Hand" FontSize="14" Header="Cadastros">
+                    <MenuItem Header="_Novo">
+                        <MenuItem Header="_Cliente" Click="Cadastro_de_Cliente_Click"/>
+                        <MenuItem Header="Instituição de _Serviço" Click="Cadastro_Inst_Servico_Click"/>
+                        <MenuItem Header="Instituição _Encaminhadora" Click="Cadastro_Inst_Encamim_Click"/>
+                        <MenuItem Header="Serviços Ofertado" Click="Cadastro_Servicos_Click"/>
+                        <MenuItem Header="Transposte _Publico" Click="Cadastro_Linha_de_onibus_Click"/>
+                        <Separator/>
+                        <MenuItem Header="Usuario do Sistema" Click="Cadastrar_Usuario_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="_Alterar">
+                        <MenuItem Header="_Cliente" Click="Alterar_Cliente_Click"/>
+                        <MenuItem Header="Instituição de _Serviço" Click="Alterar_Inst_Servico_Click"/>
+                        <MenuItem Header="Instituição _Encaminhadora" Click="Alterar_Inst_Encaminhadora_Click"/>
+                        <MenuItem Header="Serviços _Ofertados" Click="Alterar_Servicos_Click"/>
+                        <MenuItem Header="Horario Onibus" Click="Alterar_Onibus_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="_Excluir">
+                        <MenuItem Header="_Cliente" Click="Excluir_Cliente_Click"/>
+                        <MenuItem Header="Instituição de _Seriviço" Click="Excluir_Inst_Servico_Click"/>
+                        <MenuItem Header="Instituição _Encaminhadora" Click="Excluir_Inst_Encaminhadora_Click"/>
+                        <MenuItem Header="Serviços _Ofertados" Click="Excluir_Servicos_Click"/>
+                        <MenuItem Header="Linha de _Onibus" Click="Excluir_Onibus_Click"/>
+                        <Separator/>
+                        <MenuItem Header="Usuario do sistema"/>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Cursor="Hand" Header="Pesquisa" >
+                    <MenuItem Header="Inst. de Serviços" Click="Pesquisar_Inst_Servico_Click"/>
+                    <MenuItem Header="Clientes" Click="Pesquisar_Cliente_Click"/>
+                    <MenuItem Header="Linha de Onibus" Click="Pesquisar_Onibus_Click"/>
+                    <MenuItem Header="Inst. Encaminhadora" Click="Pesquisar_Encaminhadora_Click"/>
+                    <MenuItem Header="Serviços" Click="Pesquisar_Servico_Click"/>
+                </MenuItem>
+                <MenuItem Cursor="Hand" Header="Controle Pedagogico">
+                    <MenuItem Header="Pesquisar Cliente" Click="Consultar_Agenda_Compart_Click"/>
+                    <MenuItem Header="Alterar Agenda" Click="Alterar_Agenda_Compart_Click"/>
+                    <MenuItem Header="Excluir Cliente" Click="Excluir_Atgenda_Compart_Click"/>
+                    <MenuItem Header="Nova Agenda" Click="Registrar_Agenda_Compart_Click"/>
+                </MenuItem>
+                <MenuItem Header="Imprimir">
+                    <MenuItem Header="Horario de Onibus"/>
+                    <MenuItem Header="Log do Sistema"/>
+                    <MenuItem Header="Agendas"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Path Data="M149.75,210.5 C283.5,189.25 195.5,160 199.25,168.75 203,177.5 284.25018,208.75001 284.25018,208.75001 174.64295,276.82155 138.51581,345.95802 133.60248,273.63424 133.19263,267.60132 132.99998,260.5841 132.99998,252.49986 132.99998,147.5002 161.75002,167.50014 161.75002,167.50014 161.75002,167.50014 196.75007,125.00016 191.75006,173.75015 186.75006,222.50014 173.00004,261.25018 173.00004,261.25018 326.75024,220.00024 341.75026,238.75021&#xA;344.25026,300.00013 346.75027,361.25005 420.50038,273.75017 420.50038,273.75017" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="172.426" Margin="40.5,138.75,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="288.5" RenderTransformOrigin="0.643,0.342"/>
+    </Grid>
+</Window>

@@ -1,0 +1,52 @@
+﻿<Window x:Class="Redinha.Excluir_Agenda_Compart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Redinha"
+        mc:Ignorable="d"
+        Title="Excluir_Agenda_Compart" Height="466.071" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="261,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="234,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dia" HorizontalAlignment="Left" Margin="60,248,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prestadora" HorizontalAlignment="Left" Margin="484,248,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hora" HorizontalAlignment="Left" Margin="231,296,0,0" VerticalAlignment="Top"/>
+        <Label Content="Linha" HorizontalAlignment="Left" Margin="145,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="Responsável" HorizontalAlignment="Left" Margin="590,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Descrição" HorizontalAlignment="Left" Margin="329,201,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="480,163,0,0" VerticalAlignment="Top"/>
+        <Label Content="F.A." HorizontalAlignment="Left" Margin="245,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Id Usuario" HorizontalAlignment="Left" Margin="327,163,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="665,203,0,0" TextWrapping="Wrap" Text="Mariah" VerticalAlignment="Top" Width="68"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="395,204,0,0" TextWrapping="Wrap" Text="WorkShop " VerticalAlignment="Top" Width="190"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="528,165,0,0" TextWrapping="Wrap" Text="Jhon Wayne" VerticalAlignment="Top" Width="150" UndoLimit="99"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="289,79,0,0" TextWrapping="Wrap" Text="1532" VerticalAlignment="Top" Width="51"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="393,165,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="63"/>
+        <ComboBox HorizontalAlignment="Left" Margin="360,252,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="CAPS AD"/>
+            <ComboBoxItem Content="CAPS 2"/>
+            <ComboBoxItem Content="Clinica Escola Einstein"/>
+        </ComboBox>
+        <Label Content="Encaminhadora" HorizontalAlignment="Left" Margin="268,248,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="183,301,0,0" TextWrapping="Wrap" Text="36" VerticalAlignment="Top" Width="36"/>
+        <ComboBox HorizontalAlignment="Left" Margin="551,252,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Biblioteca Municipal"/>
+            <ComboBoxItem Content="COTIL"/>
+            <ComboBoxItem Content="CEPROSOM"/>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="267,300,0,0" TextWrapping="Wrap" Text="09:30" VerticalAlignment="Top" Width="51"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="87,252,0,0" TextWrapping="Wrap" Text="16/06/2019" VerticalAlignment="Top" Width="77"/>
+        <Label Content="Hora" HorizontalAlignment="Left" Margin="166,249,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="202,252,0,0" TextWrapping="Wrap" Text="10:00" VerticalAlignment="Top" Width="54"/>
+        <Label Content="ID Evento" HorizontalAlignment="Left" Margin="231,201,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="289,205,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="40"/>
+        <Calendar HorizontalAlignment="Left" Height="176" Margin="5,42,0,0" VerticalAlignment="Top" Width="214"/>
+        <Label Content="Selecione o dia do Evento" HorizontalAlignment="Left" Margin="36,21,0,0" VerticalAlignment="Top"/>
+        <Button Content="Carregar" HorizontalAlignment="Left" Margin="360,69,0,0" VerticalAlignment="Top" Width="94" Height="39"/>
+        <Button Content="Excluir" HorizontalAlignment="Left" Height="51" Margin="87,355,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button Content="_Fechar" HorizontalAlignment="Left" Height="51" Margin="480,355,0,0" VerticalAlignment="Top" Width="96" Click="Button_Fechar_Click"/>
+        <Button Content="Nova Busca" HorizontalAlignment="Left" Height="51" Margin="294,355,0,0" VerticalAlignment="Top" Width="96"/>
+
+    </Grid>
+</Window>

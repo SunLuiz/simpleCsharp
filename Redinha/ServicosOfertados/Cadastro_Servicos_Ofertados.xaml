@@ -1,0 +1,25 @@
+﻿<Window x:Name="FormServicoOfertado" x:Class="Redinha.Cadastro_Servicos_Ofertados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Redinha"
+        mc:Ignorable="d"
+        Title="Cadastro  de Servicos Ofertados" Height="393.913" Width="468.695">
+    <Grid>
+        <Label x:Name="LbId" Content="Id" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBId" HorizontalAlignment="Left" Height="23" Margin="64,14,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Width="63"/>
+        <Button x:Name="BtnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="52,243,0,0" VerticalAlignment="Top" Width="85" Height="79"/>
+        <Label x:Name="LbVagas" Content="Vagas" HorizontalAlignment="Left" Margin="270,118,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbResponsavel" Content="Responsavel" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Instituição" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbDescricao" Content="Descrição" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBDescricao" HorizontalAlignment="Left" Height="23" Margin="76,67,0,0" TextWrapping="Wrap" Text="AAAA" VerticalAlignment="Top" Width="248"/>
+        <TextBox x:Name="TBResponsavel" HorizontalAlignment="Left" Height="23" Margin="91,118,0,0" TextWrapping="Wrap" Text="AA" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="TBVagas" HorizontalAlignment="Left" Height="23" Margin="329,118,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="70"/>
+        <ComboBox HorizontalAlignment="Left" Margin="91,186,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnFechar" Content="Fechar" HorizontalAlignment="Left" Margin="298,243,0,0" VerticalAlignment="Top" Width="85" Height="79"/>
+        <Button x:Name="BtnLimpar" Content="_Limpar" HorizontalAlignment="Left" Margin="172,243,0,0" VerticalAlignment="Top" Width="84" Height="79"/>
+
+    </Grid>
+</Window>

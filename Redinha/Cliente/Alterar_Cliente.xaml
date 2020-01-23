@@ -1,0 +1,34 @@
+﻿<Window x:Class="Redinha.Alterar_Cliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Redinha"
+        mc:Ignorable="d"
+        Title="Alterar_Cliente" Height="450" Width="564">
+    <Grid>
+        <Button x:Name="BtnPesquisar" Content="Buscar" HorizontalAlignment="Left" Margin="417,51,0,0" VerticalAlignment="Top" Width="91" Height="27"/>
+        <Label x:Name="LbPesquisar" Content="F.A./Nome" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="81,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="167"/>
+        <ComboBox x:Name="CBPesquisar" HorizontalAlignment="Left" Margin="271,51,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Nome"/>
+            <ComboBoxItem Content="F.A."/>
+        </ComboBox>
+        <Label Content="Moradia" HorizontalAlignment="Left" Margin="291,216,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbNum" Content="Numero" HorizontalAlignment="Left" Margin="291,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rua" HorizontalAlignment="Left" Margin="33,165,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbFA" Content="F.A." HorizontalAlignment="Left" Margin="271,114,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbNome" Content="Nome" HorizontalAlignment="Left" Margin="20,110,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="76,114,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="172"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="305,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="66"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="76,169,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="186"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="350,169,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="LbBairro" Content="Bairro" HorizontalAlignment="Left" Margin="33,216,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="76,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="167"/>
+        <ComboBox HorizontalAlignment="Left" Margin="364,216,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Salvar _Alteração" HorizontalAlignment="Left" Height="41" Margin="63,306,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button Content="Nova Pequisa" HorizontalAlignment="Left" Height="41" Margin="214,306,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button Content="Fechar" HorizontalAlignment="Left" Height="41" Margin="364,306,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="Redinha.Pesquisar_Servicos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Redinha"
+        mc:Ignorable="d"
+        Title="Pesquisar_Servicos" Height="450" Width="800">
+    <Grid>
+        <Button Content="Adicionar ao Evento" HorizontalAlignment="Left" Margin="35,357,0,0" VerticalAlignment="Top" Width="139" Height="37" Click="Button_Adicionar_Evento_Click"/>
+        <Button Content="Procurar" HorizontalAlignment="Left" Margin="377,14,0,0" VerticalAlignment="Top" Width="142" Height="34"/>
+        <ComboBox HorizontalAlignment="Left" Margin="225,22,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Seguimento"/>
+            <ComboBoxItem Content="Bairro"/>
+            <ComboBoxItem Content="Descrição"/>
+        </ComboBox>
+        <Label Content="Digite" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="57,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="260" Margin="20,75,0,0" Stroke="Black" VerticalAlignment="Top" Width="684"/>
+        <DataGrid HorizontalAlignment="Left" Height="209" Margin="35,92,0,0" VerticalAlignment="Top" Width="647">
+            <TabItem/>
+            <Separator/>
+            <TabItem/>
+            <MenuItem Header="Tanana"/>
+        </DataGrid>
+
+    </Grid>
+</Window>

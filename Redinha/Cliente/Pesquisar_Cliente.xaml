@@ -1,0 +1,47 @@
+﻿<Window x:Class="Redinha.Pesquisar_Cliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Redinha"
+        mc:Ignorable="d"
+        Title="Pesquisar_Cliente" Height="450" Width="1046" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:RedinhaDataSet x:Key="redinhaDataSet"/>
+        <CollectionViewSource x:Key="clienteViewSource" Source="{Binding Cliente, Source={StaticResource redinhaDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource clienteViewSource}">
+        <Button x:Name="BtnPesquisar" Content="Buscar" HorizontalAlignment="Left" Margin="417,51,0,0" VerticalAlignment="Top" Width="91" Height="27"/>
+        <ComboBox x:Name="CBPesquisar" HorizontalAlignment="Left" Margin="271,51,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Nome"/>
+            <ComboBoxItem Content="Bairro"/>
+            <ComboBoxItem Content="F.A."/>
+        </ComboBox>
+        <Button Content="Nova Pequisa" HorizontalAlignment="Left" Height="41" Margin="399,191,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button Content="Fechar" HorizontalAlignment="Left" Height="41" Margin="399,256,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click"/>
+        <Button Content="Adicionar na agenda" HorizontalAlignment="Left" Height="42" Margin="398,113,0,0" VerticalAlignment="Top" Width="128" Click="Button_Click_1"/>
+        <DataGrid x:Name="clienteDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,155,583,64" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="clienteIDColumn" Binding="{Binding ClienteID}" Header="Cliente ID" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="fichaAtendimentoColumn" Binding="{Binding FichaAtendimento}" Header="Ficha Atendimento" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="nomeClienteColumn" Binding="{Binding NomeCliente}" Header="Nome Cliente" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="ruaColumn" Binding="{Binding Rua}" Header="Rua" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="numeroColumn" Binding="{Binding Numero}" Header="Numero" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="bairroColumn" Binding="{Binding Bairro}" Header="Bairro" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="moradiaColumn" Binding="{Binding Moradia}" Header="Moradia" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid x:Name="grid1" HorizontalAlignment="Left" Margin="12,46,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Ficha Atendimento:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="fichaAtendimentoTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding FichaAtendimento, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        </Grid>
+
+    </Grid>
+</Window>

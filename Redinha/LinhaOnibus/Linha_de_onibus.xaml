@@ -1,0 +1,26 @@
+﻿<Window x:Class="Redinha.Linha_de_onibus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Redinha"
+        mc:Ignorable="d"
+        Title="Cadastrar Onibus" Height="371" Width="661">
+    <Grid Margin="0,0,0,-3">
+        <Label x:Name="LBId" Content="ID" HorizontalAlignment="Left" Margin="32,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBLinha" Content="Linha" HorizontalAlignment="Left" Margin="32,69,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBBairros" Content="Bairros" HorizontalAlignment="Left" Margin="32,122,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBHorarios" Content="Horarios" HorizontalAlignment="Left" Margin="189,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.289,-3.308"/>
+        <TextBox x:Name="TBId" HorizontalAlignment="Left" Height="23" Margin="75,30,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="33"/>
+        <TextBox x:Name="TBLinha" HorizontalAlignment="Left" Height="23" Margin="75,73,0,0" TextWrapping="Wrap" Text="Linha" VerticalAlignment="Top" Width="120"/>
+        <ListView HorizontalAlignment="Left" Height="84" Margin="32,153,0,0" VerticalAlignment="Top" Width="76">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid HorizontalAlignment="Left" Height="84" Margin="163,153,0,0" VerticalAlignment="Top" Width="201"/>
+
+    </Grid>
+</Window>
